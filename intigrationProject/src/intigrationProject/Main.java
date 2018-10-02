@@ -17,6 +17,7 @@ public class Main {
 		Sstring.compareHouse();
 		Sstring.indexChar();
 		Sstring.escape();
+		Methods.wandCust();
 	}
 
 }
