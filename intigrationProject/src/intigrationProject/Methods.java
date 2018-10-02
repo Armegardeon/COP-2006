@@ -6,7 +6,7 @@ public class Methods {
 	
 	public static void wandCust() {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("What essence of a mythical animal woudl you want in your wand?:");
+		System.out.println("What essence of a mythical animal would you want in your wand?:");
 		String essence = scan.nextLine();
 		System.out.println("What kind of wood would you like your wand to be made out of?:");
 		String wood = scan.nextLine();
