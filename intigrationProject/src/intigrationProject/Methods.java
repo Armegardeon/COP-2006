@@ -11,14 +11,15 @@ public class Methods {
 		System.out.println("What kind of wood would you like your wand to be made out of?:");
 		String wood = scan.nextLine();
 		System.out.println("Wow! Such a great wand that is "+wandWood(wood) +wandEssence(essence));
+		// (wood) and (essence) are arguments for the wandWood and wandEssence methods.
 		scan.close();
 	}
 	
-	public static String wandWood(String wood){
+	public static String wandWood(String wood){    //entire line is a header. (String wood) is the parameter.
 		wood = ("crafted from a(n) "+wood+" log");
 		return wood;
 	}
-	public static String wandEssence(String essence) {
+	public static String wandEssence(String essence) {    // (String essence is parameter.
 		essence = (" and impued with the essence of a(n) "+essence+"!");
 		return essence;
 	}
