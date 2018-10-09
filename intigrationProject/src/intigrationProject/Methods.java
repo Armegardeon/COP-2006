@@ -23,4 +23,5 @@ public class Methods {
 		essence = (" and impued with the essence of a(n) "+essence+"!");
 		return essence;
 	}
+	
 }
