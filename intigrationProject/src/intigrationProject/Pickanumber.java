@@ -10,6 +10,6 @@ public class Pickanumber {
 	}
 	public static void Pi() {
 		double pi = Math.PI;
-		System.out.print(pi); // If you ever need to print the number pi, but don't remember it.
+		System.out.print(pi); // If you ever need to print the value of pi, but don't remember it.
 	}
 }

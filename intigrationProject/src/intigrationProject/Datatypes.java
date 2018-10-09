@@ -34,7 +34,6 @@ public class Datatypes {
 		System.out.println("legends say that "+(integer+dub)+"% of students dont get the house that they want.");
 		dub = (int)dub;    // changed the value dub from a double to a integer value.
 		System.out.println((int)(dub+integer)+"% if you round it.");
-		System.out.println();
 	}
 
 }

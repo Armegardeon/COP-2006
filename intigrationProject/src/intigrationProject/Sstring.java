@@ -20,7 +20,6 @@ public class Sstring {
 	public static void escape() {
 		String spell = "Why do \t I feel so \n weird...\n Is this \t a sp\tell";  // uses escape sequences to edit this string
 		System.out.println(spell);
-		System.out.println();
 	}
 
 }
