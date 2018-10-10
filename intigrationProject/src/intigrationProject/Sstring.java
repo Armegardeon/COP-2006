@@ -5,7 +5,7 @@ public class Sstring {
 	public static void compareHouse() {
 		String gryffin = "Gryffindor";
 		String snake = "Slytherin";
-		System.out.println(gryffin.compareTo(snake)>0? "Ten points to Slytherin": "Ten points to Gryffindor");
+		System.out.println(gryffin.compareTo(snake)>0? "Ten points to Slytherin": "Ten points to Gryffindor"); // ternary operator
 		System.out.println();
 		// Compares the words "Gryffindor" and "Slytherin" lexicographically. snake is larger, so it produces the second statement.
 	}

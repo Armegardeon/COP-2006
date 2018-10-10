@@ -14,7 +14,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Hello Wizard, I am the sorting hat!");
+		System.out.println("Hello Wizard, I am the sorting hat and welcome to Hogwarts!");
 		System.out.println("[Press Enter to continue]");
 		scan.nextLine();
 		
@@ -22,7 +22,7 @@ public class Main {
 		System.out.println("[Press Enter to continue]");
 		scan.nextLine();
 		
-		Sstring.compareHouse();
+		Conditions.compareHouse();
 		System.out.println("[Press Enter to continue]");
 		scan.nextLine();
 		
@@ -42,30 +42,39 @@ public class Main {
 		// (wood) and (essence) are arguments for the wandWood and wandEssence methods.
 		System.out.println("[Press Enter to continue]");
 		scan.nextLine();
-		System.out.println("Would you like to put on the sorting hat? (Y/N):");
-		char answ = scan.nextLine().toUpperCase().charAt(0);
-		scan.close();
-		if (answ == 'Y') {
-			switch (Pickanumber.random()) {
-			case 1:
-				System.out.println("You are a Gryffindor!");
-				break;
-			case 2:
-				System.out.println("You are a Ravenclaw!");
-				break;
-			case 3:
-				System.out.println("You are a Hufflepuff!");
-				break;
-			case 4:
-				System.out.println("You are a Slytherin!");
-				break;
+		char answ = 'z';
+		while (answ != 'Y' && answ != 'N') {               //Operator precedence determines the way in which operators are parsed with respect to each other.
+			System.out.println();                          // An example is a OR statement, as soon as the first value yields true, it is true.
+			System.out.println("Would you like to put on the sorting hat? (Y/N):");
+			answ = scan.nextLine().toUpperCase().charAt(0);
+			if (answ == 'Y') {
+				switch (Pickanumber.random()) {
+				case 1:
+					System.out.println("You are a Gryffindor!");
+					break;
+				case 2:
+					System.out.println("You are a Ravenclaw!");
+					break;
+				case 3:
+					System.out.println("You are a Hufflepuff!");
+					break;
+				case 4:
+					System.out.println("You are a Slytherin!");
+					break;
+				
+				}
+			}
+			else if (answ == 'N') {
+			System.out.println("I did not want to sit on your head anyways!");
+			}
+			else {
+				System.out.println("This is a yes or no questions.");
 			}
 		}
-		else {
-			System.out.println("I did not want to sit on your head anyways!");
-		}
-		
-		
+		System.out.println("[Press ENTER to leave Hogwarts]");
+		scan.nextLine();
+		scan.close();
+		System.out.println("I hope you had a nice vist at the Hogwarts, Wizarding School.");
 	}
 
 }
