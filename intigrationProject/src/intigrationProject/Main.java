@@ -74,7 +74,7 @@ public class Main {
 		System.out.println("[Press ENTER to leave Hogwarts]");
 		scan.nextLine();
 		scan.close();
-		System.out.println("I hope you had a nice vist at the Hogwarts, Wizarding School.");
+		System.out.println("I hope you had a nice visit at the Hogwarts, Wizarding School.");
 	}
 
 }
