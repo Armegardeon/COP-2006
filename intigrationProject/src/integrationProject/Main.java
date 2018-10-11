@@ -44,8 +44,9 @@ public class Main {
     System.out.println("[Press Enter to continue]");
     scan.nextLine();
 
-    char answ = 'z';
-    while (answ != 'Y' && answ != 'N') { // Operator precedence determines the way in which
+    char answ = 'y';
+    boolean goodInput = false;
+    while (!goodInput) { // Operator precedence determines the way in which
                                          // operators are parsed with respect to each other.
                                          // An example is a OR statement, as soon as the first value yields true,
                                          // it is true.
@@ -53,6 +54,7 @@ public class Main {
       answ = scan.nextLine().toUpperCase().charAt(0);
       // prompts user to input 'y' or 'n'.
       if (answ == 'Y') {
+        goodInput = true;
         switch (Pickanumber.selectNum()) {
           case 1:
             System.out.println("You are a Gryffindor!");
@@ -69,6 +71,7 @@ public class Main {
         }
       } else if (answ == 'N') {
         System.out.println("I did not want to sit on your head anyways!");
+        goodInput = true;
       } else {
         System.out.println("This is a yes or no questions.");
       }
