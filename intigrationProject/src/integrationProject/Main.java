@@ -44,16 +44,16 @@ public class Main {
     System.out.println("[Press Enter to continue]");
     scan.nextLine();
 
-    char answ = 'y';
+    String answ = "y";
     boolean goodInput = false;
     while (!goodInput) { // Operator precedence determines the way in which
                                          // operators are parsed with respect to each other.
                                          // An example is a OR statement, as soon as the first value yields true,
                                          // it is true.
       System.out.println("Would you like to put on the sorting hat? (Y/N):");
-      answ = scan.nextLine().toUpperCase().charAt(0);
+      answ = scan.nextLine();
       // prompts user to input 'y' or 'n'.
-      if (answ == 'Y') {
+      if (answ == "y" || answ == "Y") {
         goodInput = true;
         switch (Pickanumber.selectNum()) {
           case 1:
@@ -69,7 +69,7 @@ public class Main {
             System.out.println("You are a Slytherin!");
             break;
         }
-      } else if (answ == 'N') {
+      } else if (answ == "n" || answ == "N") {
         System.out.println("I did not want to sit on your head anyways!");
         goodInput = true;
       } else {
