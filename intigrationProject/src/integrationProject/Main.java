@@ -1,5 +1,5 @@
 /*
- * Created By: Zachary Maroney
+ * [ * Created By: Zachary Maroney
  * 
  * This is a demonstration of all the cool things one can do with Java and the knowledge that I have
  * gain through this taking this course. Throughout the code there are many references to the Harry
@@ -33,10 +33,12 @@ public class Main {
     Words.castSpell();
     System.out.println("[Press Enter to continue]");
     scan.nextLine();
-
-    System.out.println("What mythical animal would you like embued in to your wand?(ex. dragon):");
+    System.out.println("<> Wand Crafting Stations <>");
+    System.out
+        .println("Type a mythical animal that you would like embued in to your wand.(ex. dragon):");
     String essence = scan.nextLine();
-    System.out.println("What kind of wood would you like your wand to be made out of?(ex. birch):");
+    System.out.println(
+        "Type a kind of wood that you would like your wand to be made out of.(ex. birch):");
     String wood = scan.nextLine();
     System.out.println(
         "Wow! Such a great wand that is " + Methods.askWood(wood) + Methods.askEssence(essence));
@@ -47,10 +49,11 @@ public class Main {
     char answ = 'y';
     boolean goodInput = false;
     while (!goodInput) { // Operator precedence determines the way in which
-                                         // operators are parsed with respect to each other.
-                                         // An example is a OR statement, as soon as the first value yields true,
-                                         // it is true.
-      System.out.println("Would you like to put on the sorting hat? (Y/N):");
+                         // operators are parsed with respect to each other.
+                         // An example is a OR statement, as soon as the first value yields true,
+                         // it is true.
+      System.out
+          .println("Would you like to put on the sorting hat?:\n(type Y for yes or N for no)");
       answ = scan.nextLine().toUpperCase().charAt(0);
       // prompts user to input 'y' or 'n'.
       if (answ == 'Y') {
@@ -73,7 +76,7 @@ public class Main {
         System.out.println("I did not want to sit on your head anyways!");
         goodInput = true;
       } else {
-        System.out.println("This is a yes or no questions.");
+        System.out.println("This is a yes or no questions. /n Can you please type another answer.");
       }
     }
     System.out.println("[Press ENTER to leave Hogwarts]");

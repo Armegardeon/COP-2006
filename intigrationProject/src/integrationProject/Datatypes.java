@@ -1,15 +1,10 @@
 package integrationProject;
 
 /*
- * DataTypes: 
- * -byte: small storage with calue from [-2^8 - (2^8)-1]
- * -short: number, not decimal, smaller than an int.
- * -int: number, that is not a decimal.
- * -long: very large int value.
- * -float: decimal number, smaller than a double.
- * -double: decimal number.
- * -boolean: True or False
- * -char: single character.
+ * DataTypes: -byte: small storage with calue from [-2^8 - (2^8)-1] -short: number, not decimal,
+ * smaller than an int. -int: number, that is not a decimal. -long: very large int value. -float:
+ * decimal number, smaller than a double. -double: decimal number. -boolean: True or False -char:
+ * single character.
  */
 public class Datatypes {
 
