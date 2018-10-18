@@ -1,3 +1,5 @@
+// created by: Zachary Maroney
+
 package integrationProject;
 
 public class Conditions {

@@ -1,5 +1,5 @@
 /*
- * [ * Created By: Zachary Maroney
+ * Created By: Zachary Maroney
  * 
  * This is a demonstration of all the cool things one can do with Java and the knowledge that I have
  * gain through this taking this course. Throughout the code there are many references to the Harry
@@ -76,7 +76,7 @@ public class Main {
         System.out.println("I did not want to sit on your head anyways!");
         goodInput = true;
       } else {
-        System.out.println("This is a yes or no questions. /n Can you please type another answer.");
+        System.out.println("This is a yes or no questions. \nCan you please type another answer.");
       }
     }
     System.out.println("[Press ENTER to leave Hogwarts]");
