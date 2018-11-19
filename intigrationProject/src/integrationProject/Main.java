@@ -15,27 +15,21 @@ public class Main {
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
     System.out.println("Hello Wizard, I am the sorting hat and welcome to Hogwarts!");
-    System.out.println("[Press Enter to continue]");
-    scan.nextLine();
+    Continue.pressEnter();
 
     Datatypes.assignStats();
-    System.out.println("[Press Enter to continue]");
-    scan.nextLine();
+    Continue.pressEnter();
 
     Conditions.compareHouse();
-    System.out.println("[Press Enter to continue]");
-    scan.nextLine();
+    Continue.pressEnter();
 
     Words.indexChar();
-    System.out.println("[Press Enter to continue]");
-    scan.nextLine();
+    Continue.pressEnter();
 
     Words.castSpell();
-    System.out.println("[Press Enter to continue]");
-    scan.nextLine();
+    Continue.pressEnter();
     System.out.println("<> Wand Crafting Stations <>");
-    System.out
-        .println("Type a mythical animal that you would like embued in to your wand.(ex. dragon):");
+    System.out.println("Type a mythical animal that you would like embued in to your wand.(ex. dragon):");
     String essence = scan.nextLine();
     System.out.println(
         "Type a kind of wood that you would like your wand to be made out of.(ex. birch):");
@@ -43,8 +37,7 @@ public class Main {
     System.out.println(
         "Wow! Such a great wand that is " + Methods.askWood(wood) + Methods.askEssence(essence));
     // (wood) and (essence) are arguments for the wandWood and wandEssence methods.
-    System.out.println("[Press Enter to continue]");
-    scan.nextLine();
+    Continue.pressEnter();
 
     char answ = 'y';
     boolean goodInput = false;
@@ -52,9 +45,14 @@ public class Main {
                          // operators are parsed with respect to each other.
                          // An example is a OR statement, as soon as the first value yields true,
                          // it is true.
-      System.out
-          .println("Would you like to put on the sorting hat?:\n(type Y for yes or N for no)");
-      answ = scan.nextLine().toUpperCase().charAt(0);
+      System.out.println("Would you like to put on the sorting hat?:\n(type Y for yes or N for no)");
+      try{
+        answ = scan.nextLine().toUpperCase().charAt(0);
+      }
+      catch (Exception ex) {
+        System.out.println("Oh, a quite type, Im going to assume you wanna be sorted.");
+        answ = 'Y';
+      }
       // prompts user to input 'y' or 'n'.
       if (answ == 'Y') {
         goodInput = true;
