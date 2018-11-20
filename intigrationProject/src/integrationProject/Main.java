@@ -29,7 +29,8 @@ public class Main {
     Words.castSpell();
     Continue.pressEnter();
     System.out.println("<> Wand Crafting Stations <>");
-    System.out.println("Type a mythical animal that you would like embued in to your wand.(ex. dragon):");
+    System.out
+        .println("Type a mythical animal that you would like embued in to your wand.(ex. dragon):");
     String essence = scan.nextLine();
     System.out.println(
         "Type a kind of wood that you would like your wand to be made out of.(ex. birch):");
@@ -45,12 +46,12 @@ public class Main {
                          // operators are parsed with respect to each other.
                          // An example is a OR statement, as soon as the first value yields true,
                          // it is true.
-      System.out.println("Would you like to put on the sorting hat?:\n(type Y for yes or N for no)");
-      try{
+      System.out
+          .println("Would you like to put on the sorting hat?:\n(type Y for yes or N for no)");
+      try {
         answ = scan.nextLine().toUpperCase().charAt(0);
-      }
-      catch (Exception ex) {
-        System.out.println("Oh, a quite type, Im going to assume you wanna be sorted.");
+      } catch (Exception ex) {
+        System.out.println("Oh, a quiet type, Im going to assume you wanna be sorted.");
         answ = 'Y';
       }
       // prompts user to input 'y' or 'n'.

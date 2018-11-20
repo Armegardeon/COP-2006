@@ -18,7 +18,7 @@ public class Conditions {
     int h = 2;
     h += h; // adds h to itself = 4
   }
-  
+
   public static void compareHouse() {
     String gryffin = "Gryffindor";
     String snake = "Slytherin";
