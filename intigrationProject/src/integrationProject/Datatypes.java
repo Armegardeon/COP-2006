@@ -1,4 +1,4 @@
-// created by: Zachary Maroney
+// Created by: Zachary Maroney
 
 package integrationProject;
 

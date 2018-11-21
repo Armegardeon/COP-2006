@@ -1,4 +1,5 @@
 // Created by: Zachary Maroney
+
 package integrationProject;
 
 public class Loops {
@@ -15,7 +16,7 @@ public class Loops {
 
     for(int x : numbers) {
        if(x == 4) {
-          break;
+          break;           // breaks stops the for statement from continuing through the array at 4.
        }
        System.out.println(x);
     }
