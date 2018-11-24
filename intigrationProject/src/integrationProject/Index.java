@@ -2,6 +2,7 @@
 
 package integrationProject;
 
+// Search an array and identify the index where a value was found.
 public class Index {
 
   public static int findIndex(int array[], int elem) {

@@ -2,6 +2,7 @@
 
 package integrationProject;
 
+//Develop code that makes use of polymorphism
 public class Shark extends Animal { // Overrides the Animal class to set the sound to the associated
                                     // animal
   @Override

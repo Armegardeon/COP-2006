@@ -77,19 +77,40 @@ public class Main {
 
     House hs = new House(name, house);
 
-
     System.out.println("[Press ENTER to leave Hogwarts]");
     scan.nextLine();
 
     System.out.println("I hope you had a nice visit at the Hogwarts, Wizarding School.");
-    System.out.println(); 
+    System.out.println();
     System.out.println("Rest of the text has nothing to do with Harrry Potter and is test code.");
+
     Continue.pressEnter();
-    int[] new_array = {1, 3, 5, 7, 9, 2, 4, 6, 8};
-    
-    System.out.println("At 5, the Index is: " + Index.findIndex(new_array, 5));
-    
-    System.out.println("At 6, the Index is: " + Index.findIndex(new_array, 6));
+
+    int[] new_Array = {1, 3, 5, 7, 9, 2, 4, 6, 8};
+
+    Accumulator.getSum(new_Array);
+    Continue.pressEnter();
+
+    System.out.println("At 5, the Index is: " + Index.findIndex(new_Array, 5));
+
+    System.out.println("At 6, the Index is: " + Index.findIndex(new_Array, 6));
+    Continue.pressEnter();
+
+    TwoDimensionalArray.make2DArray();
+    Continue.pressEnter();
+
+    ArrayListEmpty.testArrayList();
+    Continue.pressEnter();
+
+    int[][] board = {{690, 420, 412, 404}, {626, 512, 985, 561}, {128, 235, 1567, 1241},
+        {6346, 123, 3242, 231}};
+
+    SearchTwoDimensional.locateValue(board, 420);
+    SearchTwoDimensional.locateValue(board, 985);
+    SearchTwoDimensional.locateValue(board, 6346);
+    Continue.pressEnter();
     scan.close();
+
+    System.out.println("Thank you for using my program!");
   }
 }

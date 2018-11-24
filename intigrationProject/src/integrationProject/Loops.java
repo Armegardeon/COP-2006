@@ -4,7 +4,7 @@ package integrationProject;
 
 public class Loops {
 
-  public static void doLoop() {
+  public static void doLoop() {    // Create and use do/while loops
     int i = 5;
     do {
       System.out.println("this is still gonna print because this is a do/while loop");
