@@ -15,7 +15,7 @@ public class Loops {
     int[] numbers = {1, 2, 3, 4, 5}; // Declare, instantiate, initialize and use a one-dimensional
                                      // array
 
-    for (int x : numbers) {
+    for (int x : numbers) {  // Create and use the enhanced for loop
       if (x == 4) {
         break; // breaks stops the for statement from continuing through the array at 4.
       }
