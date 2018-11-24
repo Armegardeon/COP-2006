@@ -2,20 +2,40 @@
 
 package integrationProject;
 
-public class Person { // Use super and this to access objects and constructors
+// Use super and this to access objects and constructors
+public class Person {
 
-  Person() {
-    System.out.println("Is a person");
+  Person(String name) {
+    System.out.println(name + " is a person");
   }
 }
 
 
 class Student extends Person {
-  Student() {
+  Student(String name) {
     // calls the constructor in the super class
-    super();
+    super(name);
 
-    System.out.println("Is a student");
+    System.out.println(name + " is a student");
   }
 }
 
+
+class Wizard extends Student {
+  Wizard(String name) {
+    // calls the constructor in the super class
+    super(name);
+
+    System.out.println(name + " is a Wizard");
+  }
+}
+
+
+class House extends Wizard {
+  House(String name, String house) {
+    // calls the constructor in the super class
+    super(name);
+
+    System.out.println(name + " is a " + house);
+  }
+}

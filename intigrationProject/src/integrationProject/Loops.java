@@ -12,13 +12,14 @@ public class Loops {
   }
 
   public static void doArrayBreak() {
-    int [] numbers = {1, 2, 3, 4, 5};  // Declare, instantiate, initialize and use a one-dimensional array
+    int[] numbers = {1, 2, 3, 4, 5}; // Declare, instantiate, initialize and use a one-dimensional
+                                     // array
 
-    for(int x : numbers) {
-       if(x == 4) {
-          break;           // breaks stops the for statement from continuing through the array at 4.
-       }
-       System.out.println(x);
+    for (int x : numbers) {
+      if (x == 4) {
+        break; // breaks stops the for statement from continuing through the array at 4.
+      }
+      System.out.println(x);
     }
   }
 }

@@ -2,7 +2,7 @@
 
 package integrationProject;
 
-public class Sum {       // overloading the a method
+public class Sum { // overloading the a method
   public int sum(int x, int y) {
     return (x + y);
   }

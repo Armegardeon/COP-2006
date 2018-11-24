@@ -14,13 +14,19 @@ public class Main {
 
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
-    System.out.println("Hello Wizard, I am the sorting hat and welcome to Hogwarts!");
+    System.out
+        .println("Hello Wizard, I am the sorting hat and welcome to Hogwarts!\nWhat is your name?");
+    String name = scan.nextLine();
+    System.out.println("Ahh, Nice to meet you " + name + ".");
     Continue.pressEnter();
 
     Datatypes.assignStats();
     Continue.pressEnter();
 
     Conditions.compareHouse();
+    Continue.pressEnter();
+
+    Minimum.printMin();
     Continue.pressEnter();
 
     Words.indexChar();
@@ -42,6 +48,7 @@ public class Main {
 
     char answ = 'y';
     boolean goodInput = false;
+    String house = HouseSelection.selectHouse();
     while (!goodInput) { // Operator precedence determines the way in which
                          // operators are parsed with respect to each other.
                          // An example is a OR statement, as soon as the first value yields true,
@@ -57,32 +64,32 @@ public class Main {
       // prompts user to input 'y' or 'n'.
       if (answ == 'Y') {
         goodInput = true;
-        switch (Pickanumber.selectNum()) {
-          case 1:
-            System.out.println("You are a Gryffindor!");
-            break;
-          case 2:
-            System.out.println("You are a Ravenclaw!");
-            break;
-          case 3:
-            System.out.println("You are a Hufflepuff!");
-            break;
-          case 4:
-            System.out.println("You are a Slytherin!");
-            break;
-        }
+        System.out.println("You are a " + house + ", congratulations!");
       } else if (answ == 'N') {
         System.out.println("I did not want to sit on your head anyways!");
         goodInput = true;
+        house = "un-sorted wizard";
       } else {
         System.out.println("This is a yes or no questions. \nCan you please type another answer.");
       }
     }
+    Continue.pressEnter();
+
+    House hs = new House(name, house);
+
+
     System.out.println("[Press ENTER to leave Hogwarts]");
     scan.nextLine();
-    scan.close();
 
     System.out.println("I hope you had a nice visit at the Hogwarts, Wizarding School.");
+    System.out.println(); 
+    System.out.println("Rest of the text has nothing to do with Harrry Potter and is test code.");
+    Continue.pressEnter();
+    int[] new_array = {1, 3, 5, 7, 9, 2, 4, 6, 8};
+    
+    System.out.println("At 5, the Index is: " + Index.findIndex(new_array, 5));
+    
+    System.out.println("At 6, the Index is: " + Index.findIndex(new_array, 6));
+    scan.close();
   }
-
 }
