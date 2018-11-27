@@ -26,7 +26,7 @@ public class Main {
     Conditions.compareHouse();
     Continue.pressEnter();
 
-    Minimum.printMin();
+    Minimum.printMin();        // Find the smallest value in an array. (In Minimum class).
     Continue.pressEnter();
 
     Words.indexChar();
@@ -88,10 +88,10 @@ public class Main {
 
     int[] new_Array = {1, 3, 5, 7, 9, 2, 4, 6, 8};
 
-    Accumulator.getSum(new_Array);
+    Accumulator.getSum(new_Array);   // Get a sum of the values in an array using an accumulator. (In getSum class)
     Continue.pressEnter();
 
-    System.out.println("At 5, the Index is: " + Index.findIndex(new_Array, 5));
+    System.out.println("At 5, the Index is: " + Index.findIndex(new_Array, 5));   // Search an array and identify the index where a value was found. (In Index class).
 
     System.out.println("At 6, the Index is: " + Index.findIndex(new_Array, 6));
     Continue.pressEnter();
