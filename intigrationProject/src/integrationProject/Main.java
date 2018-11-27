@@ -74,9 +74,10 @@ public class Main {
       }
     }
     Continue.pressEnter();
-
+    
     House hs = new House(name, house);
-
+    hs.toString();
+    
     System.out.println("[Press ENTER to leave Hogwarts]");
     scan.nextLine();
 

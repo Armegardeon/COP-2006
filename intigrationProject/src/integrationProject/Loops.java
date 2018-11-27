@@ -8,6 +8,7 @@ public class Loops {
     int i = 5;
     do {
       System.out.println("this is still gonna print because this is a do/while loop");
+      i++;
     } while (i > 10);
   }
 

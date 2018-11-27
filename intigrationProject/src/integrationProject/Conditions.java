@@ -11,12 +11,14 @@ public class Conditions {
     int e = 2 % 2; // remainder = 0
 
     int f = 1;
-    f = f++; // adds one to f = 2
+    f++; // adds one to f = 2
+    System.out.println(f);
 
     int g = 1;
-    g = g--; // subtracts 1 from g = 0
+    g--;; // subtracts 1 from g = 0
     int h = 2;
     h += h; // adds h to itself = 4
+    System.out.println(g + h);
   }
 
   public static void compareHouse() {
