@@ -8,6 +8,10 @@ package integrationProject;
  * -float:decimal number, smaller than a double. -double: decimal number. -boolean: True or False
  * -char: single character.
  */
+/**
+ * Info about data types.
+ * @author Zachary Maroney
+ */
 public class Datatypes {
 
   String letters = "This sentence is used as an example";
@@ -17,11 +21,13 @@ public class Datatypes {
   // Variables are place holders for values.
   // Scope is what the code is allowed to manipulate.
 
-  /*public static void assignBool() {
-    boolean fals = false;
-    boolean tru = true;
-  }*/
+  /*
+   * public static void assignBool() { boolean fals = false; boolean tru = true; }
+   */
 
+  /**
+   * grabs statistic of who doesn't get he house they want from the sorting hat.
+   */
   public static void assignStats() {
     int integer = 42;
     double dub = 4.2;

@@ -10,8 +10,16 @@ package integrationProject;
 
 import java.util.Scanner;
 
+/**
+ * Main class that executes all the methods.
+ * @author Zachary Maroney
+ */
 public class Main {
 
+  /**
+   * main method that holds all the 
+   * @param args runs the whole program.
+   */
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
     System.out

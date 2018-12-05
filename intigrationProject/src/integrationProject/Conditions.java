@@ -2,7 +2,15 @@
 
 package integrationProject;
 
+/**
+ * Testing out number variables. Testing out String methods.
+ * 
+ * @author Zachary Maroney
+ */
 public class Conditions {
+  /**
+   * Tests out int values. uses simple math to change output.
+   */
   public static void equateNumbers() {
     int a = 2 + 2; // Addition = 4
     int b = 2 - 2; // Subtraction = 0
@@ -22,11 +30,14 @@ public class Conditions {
     System.out.println(g + h);
   }
 
+  /**
+   * Compares two strings. outputs a statement
+   */
   public static void compareHouse() {
     String gryffin = "Gryffindor";
     String snake = "Slytherin";
     System.out.println(gryffin.compareTo(snake) > 0 ? "Ten points to Slytherin" : // ternary
-        // operator
+    // operator
         "Ten points to Gryffindor");
     // Can not use == for String because String are assigned different numbers,
     // so no matter what they are going to be different.

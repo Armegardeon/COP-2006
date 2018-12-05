@@ -4,8 +4,15 @@ package integrationProject;
 
 import java.util.ArrayList;
 
-// Declare and use an ArrayList of a given type
+/**
+ * Utilizes what was learned about array list
+ * in COP 2001.
+ * @author Zachary Maroney 
+ */
 public class ArrayListEmpty {
+  /**
+   * Test different Array list commands.
+   */
   public static void testArrayList() {
     ArrayList<Object> al = new ArrayList<>();   // declares new array list
     al.add("ZAM");    // adds elements to the arraylist

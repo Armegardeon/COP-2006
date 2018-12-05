@@ -2,6 +2,11 @@
 
 package integrationProject;
 
+/**
+ * create a rectangle.
+ * 
+ * @author Zach
+ */
 public class Rectangle {
 
   private int xcord;
@@ -17,6 +22,14 @@ public class Rectangle {
     this(0, 0, width, height);
   }
 
+  /**
+   * set up a rectangle with dimensions.
+   * 
+   * @param x Any int value. 
+   * @param y Any int value.
+   * @param width Any int value.
+   * @param height Any int value.
+   */
   public Rectangle(int x, int y, int width, int height) {
     this.setX(x);
     this.setY(y);

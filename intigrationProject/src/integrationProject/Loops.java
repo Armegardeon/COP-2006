@@ -2,9 +2,16 @@
 
 package integrationProject;
 
+/**
+ * array and if statements with breaks.
+ * @author Zacharay Maroney
+ */
 public class Loops {
 
-  public static void doLoop() {    // Create and use do/while loops
+  /**
+   * Create and use do/while loops.
+   */
+  public static void doLoop() {
     int i = 5;
     do {
       System.out.println("this is still gonna print because this is a do/while loop");
@@ -12,9 +19,11 @@ public class Loops {
     } while (i > 10);
   }
 
+  /**
+   * Declare, instantiate, initialize and use a one-dimensional array.
+   */
   public static void doArrayBreak() {
-    int[] numbers = {1, 2, 3, 4, 5}; // Declare, instantiate, initialize and use a one-dimensional
-    // array
+    int[] numbers = {1, 2, 3, 4, 5};
 
     for (int x : numbers) {  // Create and use the enhanced for loop
       if (x == 4) {

@@ -2,7 +2,17 @@
 
 package integrationProject;
 
+/**
+ * Sort user into a random house.
+ * 
+ * @author Zachary Maroney
+ */
 public class HouseSelection {
+  /**
+   * Picks a random number from 1-4 each house is associated with a number.
+   * 
+   * @return the randomly selected house.
+   */
   public static String selectHouse() {
     String house = "";
     switch (Pickanumber.selectNum()) {
@@ -24,5 +34,5 @@ public class HouseSelection {
     return house;
   }
 
-  
+
 }
