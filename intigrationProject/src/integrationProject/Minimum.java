@@ -5,7 +5,7 @@ package integrationProject;
 // Find the smallest value in an array.
 public class Minimum {
   public static void printMin() {
-    int array[] = new int[] {25, 45, 32, 12, 65, 5, 43};
+    int[] array = new int[] {25, 45, 32, 12, 65, 5, 43};
     int min = getMin(array);
     System.out.println("Minimum number of points that a teacher can take from a house is: " + min);
   }

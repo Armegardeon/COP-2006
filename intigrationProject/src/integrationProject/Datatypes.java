@@ -12,15 +12,15 @@ public class Datatypes {
 
   String letters = "This sentence is used as an example";
 
-  final double PI = 3.14; // makes Pi always = to 3.14, essentially a constant.
+  final double pi = 3.14; // makes Pi always = to 3.14, essentially a constant.
 
   // Variables are place holders for values.
   // Scope is what the code is allowed to manipulate.
 
-  public static void assignBool() {
+  /*public static void assignBool() {
     boolean fals = false;
     boolean tru = true;
-  }
+  }*/
 
   public static void assignStats() {
     int integer = 42;

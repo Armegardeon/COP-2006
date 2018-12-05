@@ -3,8 +3,11 @@
 package integrationProject;
 
 public class Rectangle {
-  private int x, y;
-  private int width, height;
+
+  private int xcord;
+  private int ycord;
+  private int width;
+  private int height;
 
   public Rectangle() {
     this(0, 0, 1, 1);
@@ -15,9 +18,41 @@ public class Rectangle {
   }
 
   public Rectangle(int x, int y, int width, int height) {
-    this.x = x;
-    this.y = y;
+    this.setX(x);
+    this.setY(y);
+    this.setWidth(width);
+    this.setHeight(height); // Use this to access objects and constructors
+  }
+
+  public int getX() {
+    return xcord;
+  }
+
+  public void setX(int x) {
+    this.xcord = x;
+  }
+
+  public int getY() {
+    return ycord;
+  }
+
+  public void setY(int y) {
+    this.ycord = y;
+  }
+
+  public int getWidth() {
+    return width;
+  }
+
+  public void setWidth(int width) {
     this.width = width;
-    this.height = height; // Use this to access objects and constructors
+  }
+
+  public int getHeight() {
+    return height;
+  }
+
+  public void setHeight(int height) {
+    this.height = height;
   }
 }

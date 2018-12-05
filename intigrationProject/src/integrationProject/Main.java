@@ -26,7 +26,7 @@ public class Main {
     Conditions.compareHouse();
     Continue.pressEnter();
 
-    Minimum.printMin();        // Find the smallest value in an array. (In Minimum class).
+    Minimum.printMin(); // Find the smallest value in an array. (In Minimum class).
     Continue.pressEnter();
 
     Words.indexChar();
@@ -50,9 +50,9 @@ public class Main {
     boolean goodInput = false;
     String house = HouseSelection.selectHouse();
     while (!goodInput) { // Operator precedence determines the way in which
-                         // operators are parsed with respect to each other.
-                         // An example is a OR statement, as soon as the first value yields true,
-                         // it is true.
+      // operators are parsed with respect to each other.
+      // An example is a OR statement, as soon as the first value yields true,
+      // it is true.
       System.out
           .println("Would you like to put on the sorting hat?:\n(type Y for yes or N for no)");
       try {
@@ -74,10 +74,10 @@ public class Main {
       }
     }
     Continue.pressEnter();
-    
+
     House hs = new House(name, house);
     hs.toString();
-    
+
     System.out.println("[Press ENTER to leave Hogwarts]");
     scan.nextLine();
 
@@ -87,14 +87,19 @@ public class Main {
 
     Continue.pressEnter();
 
-    int[] new_Array = {1, 3, 5, 7, 9, 2, 4, 6, 8};
+    int[] numList = {1, 3, 5, 7, 9, 2, 4, 6, 8};
 
-    Accumulator.getSum(new_Array);   // Get a sum of the values in an array using an accumulator. (In getSum class)
+    Accumulator.getSum(numList); // Get a sum of the values in an array using an accumulator. (In
+    // getSum class)
     Continue.pressEnter();
 
-    System.out.println("At 5, the Index is: " + Index.findIndex(new_Array, 5));   // Search an array and identify the index where a value was found. (In Index class).
+    System.out.println("At 5, the Index is: " + Index.findIndex(numList, 5)); // Search an array
+    // and identify the
+    // index where a
+    // value was found.
+    // (In Index class).
 
-    System.out.println("At 6, the Index is: " + Index.findIndex(new_Array, 6));
+    System.out.println("At 6, the Index is: " + Index.findIndex(numList, 6));
     Continue.pressEnter();
 
     TwoDimensionalArray.make2DArray();

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 // Declare and use an ArrayList of a given type
 public class ArrayListEmpty {
   public static void testArrayList() {
-    ArrayList al = new ArrayList<>();   // declares new array list
+    ArrayList<Object> al = new ArrayList<>();   // declares new array list
     al.add("ZAM");    // adds elements to the arraylist
     al.add("test");
     al.add(1, "Z");  // assigns "A" to index 1

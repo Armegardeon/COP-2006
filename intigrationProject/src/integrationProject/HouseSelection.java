@@ -18,6 +18,8 @@ public class HouseSelection {
       case 4:
         house = "Slytherin";
         break;
+      default:
+        break;
     }
     return house;
   }

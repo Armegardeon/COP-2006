@@ -8,6 +8,6 @@ public class Accumulator {
     for (int i : someArray) {
       sum += i;
     }
-    System.out.println("The sum of the array is: "+sum);
+    System.out.println("The sum of the array is: " + sum);
   }
 }

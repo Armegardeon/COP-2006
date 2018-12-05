@@ -14,7 +14,7 @@ public class Loops {
 
   public static void doArrayBreak() {
     int[] numbers = {1, 2, 3, 4, 5}; // Declare, instantiate, initialize and use a one-dimensional
-                                     // array
+    // array
 
     for (int x : numbers) {  // Create and use the enhanced for loop
       if (x == 4) {
