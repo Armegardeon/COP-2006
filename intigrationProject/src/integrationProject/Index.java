@@ -5,7 +5,7 @@ package integrationProject;
 /**
  * Search an array and identify the index where a value was found.
  * 
- * @author Zach
+ * @author Zachary Maroney
  */
 public class Index {
 
@@ -16,7 +16,7 @@ public class Index {
    * @param elem number in the array
    * @return the index of the elem.
    */
-  public static int findIndex(int array[], int elem) {
+  public static int findIndex(int[] array, int elem) {
     if (array == null) {
       return -1;
     }

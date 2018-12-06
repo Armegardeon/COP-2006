@@ -37,7 +37,7 @@ public class Conditions {
     String gryffin = "Gryffindor";
     String snake = "Slytherin";
     System.out.println(gryffin.compareTo(snake) > 0 ? "Ten points to Slytherin" : // ternary
-    // operator
+        // operator
         "Ten points to Gryffindor");
     // Can not use == for String because String are assigned different numbers,
     // so no matter what they are going to be different.

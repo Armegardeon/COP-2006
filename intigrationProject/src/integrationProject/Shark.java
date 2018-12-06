@@ -2,17 +2,15 @@
 
 package integrationProject;
 
-//Develop code that makes use of polymorphism
-public class Shark extends Animal { // Overrides the Animal class to set the sound to the associated
-  // animal
+/**
+ * Overrides the Animal class to set the sound to the associated animal.
+ * 
+ * @author Zachary Maroney
+ */
+public class Shark extends Animal {
   @Override
   public void sound() {
     System.out.println("Du Du Du");
-  }
-
-  public static void main(String[] args) {
-    Animal obj = new Shark();
-    obj.sound();
   }
 }
 /*

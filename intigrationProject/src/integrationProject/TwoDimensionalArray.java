@@ -3,7 +3,7 @@
 package integrationProject;
 
 /**
- * Declare, instantiate, initialize and use multi-dimensional arrays
+ * Declare, instantiate, initialize and use multi-dimensional arrays.
  * 
  * @author Zachary Maroney
  */

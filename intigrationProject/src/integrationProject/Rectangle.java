@@ -5,7 +5,7 @@ package integrationProject;
 /**
  * create a rectangle.
  * 
- * @author Zach
+ * @author Zachary Maroney
  */
 public class Rectangle {
 

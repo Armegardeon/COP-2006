@@ -10,6 +10,7 @@ package integrationProject;
  */
 /**
  * Info about data types.
+ * 
  * @author Zachary Maroney
  */
 public class Datatypes {

@@ -2,9 +2,20 @@
 
 package integrationProject;
 
-// Search a two-dimensional array and identify the coordinates where a value was found
+/**
+ * Search a two-dimensional array and identify the coordinates where a value was found.
+ * 
+ * @author Zachary Maroney
+ */
 public class SearchTwoDimensional {
 
+  /**
+   * Locate that position of a value in a two-dimensional array.
+   * 
+   * @param board the two-dimensional array that is being searched. needs to be an int array of int
+   *        values.
+   * @param value the int that is being searched for in the array.
+   */
   public static void locateValue(int[][] board, int value) {
     int x = 0;
     int y = 0;

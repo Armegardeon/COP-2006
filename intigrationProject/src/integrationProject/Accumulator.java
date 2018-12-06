@@ -2,6 +2,11 @@
 
 package integrationProject;
 
+/**
+ * An accumulator that sums an array.
+ * 
+ * @author Zachary Maroney
+ */
 public class Accumulator {
   /**
    * Gets the sum of an array and outputs the value.

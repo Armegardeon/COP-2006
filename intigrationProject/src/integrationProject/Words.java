@@ -2,8 +2,17 @@
 
 package integrationProject;
 
+/**
+ * Examples of difference String methods.
+ * 
+ * @author Zachary Maroney
+ */
 public class Words {
 
+  /**
+   * Compares two Strings and outputs a statement that, with which ever one comes first in a
+   * dictionary.
+   */
   public static void compareHouse() {
     String gryffin = "Gryffindor";
     String snake = "Slytherin";
@@ -14,6 +23,9 @@ public class Words {
     // snake is larger, so it produces the second statement.
   }
 
+  /**
+   * Prints a String with each character on a separate line.
+   */
   public static void indexChar() {
     String raven = "Ravenclaw";
     for (int i = 0; i < raven.length(); i++) { // grabs the length of the variable raven, using the
@@ -24,6 +36,9 @@ public class Words {
     }
   }
 
+  /**
+   * Example of using escape sequences in String values.
+   */
   public static void castSpell() {
     String spell = "Why do \t I feel so \n weird...\n Is this \t a sp\tell"; // uses escape
     // sequences to edit
